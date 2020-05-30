@@ -1,0 +1,12 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  padding: 1em;
+}
+
+.wrapper .container {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+/*# sourceMappingURL=style.css.map */
