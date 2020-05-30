@@ -16,11 +16,7 @@ class MarkdownPreviewer extends React.Component {
     renderMarkdowm(e) {
         this.setState({
             markdown: e.target.value
-        })
-        console.log(
-
-        );
-
+        });
     }
 
     render() {
@@ -28,8 +24,12 @@ class MarkdownPreviewer extends React.Component {
             <article className="wrapper">
                 <Title />
                 <section className="container">
-                    <Textarea initialMarkdowm={this.state.markdown} onChange={this.renderMarkdowm} />
-                    <Preview markdown={this.state.markdown} />
+                    <div className="input">
+                        <Textarea initialMarkdowm={this.state.markdown} onChange={this.renderMarkdowm} />
+                    </div>
+                    <div className="output">
+                        <Preview markdown={this.state.markdown} />
+                    </div>
                 </section>
                 <Footer />
             </article>

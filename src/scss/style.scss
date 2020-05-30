@@ -2,18 +2,29 @@
 @import "preview";
 
 body {
-    // overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: violet;
 }
 
 .wrapper {
-    width: 100vw;
     height: 100vh;
 
-    padding: 1em;
+    padding: 0 1em;
 
     .container {
-        display: flex;
+        margin: auto;
+        max-width: 700px;
+        padding: 1em;
+        background-color: white;
+        align-items: center;
+        // display: flex;
         flex-direction: column;
-        overflow-y: scroll;
+        border-radius: 20px;
+        box-shadow: 0 0 10px 7px white;
+        // overflow-y: scroll;
     }
+}
+
+.title {
+    text-align: center;
 }
